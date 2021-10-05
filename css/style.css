@@ -351,11 +351,15 @@ header .intro-text {
   margin: 0 auto;
   color: #fff;
   background: rgba(31, 56, 110, 0.8);
-  padding: 30% 0 0 0;
+  padding: 20% 0 0 0;
   height: 100%;
   width: 100%;
   opacity: 0;
   transition: all 0.5s;
+}
+.hover-bg .hover-text .icon {
+  height: 60%;
+  width: 60%;
 }
 .hover-bg .hover-text > h4 {
   opacity: 0;
