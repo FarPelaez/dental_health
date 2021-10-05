@@ -65,6 +65,7 @@ hr {
   margin-bottom: 20px;
   border: 0;
 }
+
 /* Navigation */
 #menu {
   padding: 20px;
@@ -298,11 +299,11 @@ input[type="checkbox"]{
   padding: 0;
 }
 #about .about-text li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
+  font-family: "Font Awesome";
+  font-weight: 300;
+  content: "\f560";
   color: #1f386e;
   font-size: 16px;
-  font-weight: 300;
   padding-right: 8px;
 }
 #about img {
@@ -572,3 +573,4 @@ label {
     margin: 50px 0;
   }
 }
+
