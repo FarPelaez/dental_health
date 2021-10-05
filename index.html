@@ -17,7 +17,7 @@
 
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/all.css">
 
   <!-- Stylesheet
     ================================================== -->
@@ -45,20 +45,46 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
           data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
             class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#page-top" class="page-scroll"> <img src="../dental_health/img/logo_dentalhealth.svg" height="50" width="250"></a>
-      </div>  
-
+        <a href="#page-top" class="page-scroll"> <img src="../dental_health/img/logo_dentalhealth.svg" height="50"
+            width="250"></a>
+      </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about" class="page-scroll">Quienes somos</a></li>
           <li><a href="#services" class="page-scroll">Servicios</a></li>
-          <li><a href="#contact" class="page-scroll">Citas</a></li>
+          <li><a href="#gallery" class="page-scroll">Galería</a></li>
+          <li><label for="show" class="btn btn-custom btn-lg">Ingreso/Registro</label></li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
   </nav>
+  <input type="checkbox" id="show">
+  <!-- Login Pop-up -->
+  <div id="login">
+    <div class="container">
+      <div class="text">
+        <h3>Inicio de Sesión</h3>
+      </div>
+      <label for="show" class="close-btn fas fa-times" title="Cerrar"></label>
+      <div class="col-md-4">
+        <div class="row">
+          <form name="login" id="contactForm" novalidate>
+            <div class="form-group">
+              <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
+              <p class="help-block text-danger"></p>
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div id="success"></div>
+            <button type="login" class="btn btn-custom btn-lg">Iniciar sesión</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Header -->
   <header id="header">
     <div class="intro">
@@ -66,18 +92,21 @@
         <div class="container">
           <div class="row">
             <div class="col-md-8 col-md-offset-2 intro-text">
-              <img alt="logo_blnc" src="../dental_health/img/logo_blanco_cuadrado.svg" href="#page-top" height="150" width="150">
+              <img alt="logo_blnc" src="../dental_health/img/logo_blanco_cuadrado.svg" href="#page-top" height="150"
+                width="150">
               <h1>Bienvenido a DentalHealth</h1>
-              <p>En DENTALHEALTH contamos con un prestigioso equipo de especialistas en todas las áreas de la odontología, altamente calificado, idóneo y competitivo.
-                Nuestra misión es hacer de la odontología especializada una experiencia placentera y de primera calidad, orientada a preservar y rehabilitar la salud oral.</p>
-              <a href="#contact" class="btn btn-custom btn-lg page-scroll">Agenda tu cita</a>
+              <p>En <b>DentalHealth</b> contamos con un prestigioso equipo de especialistas en todas las áreas de la
+                odontología, altamente calificado, idóneo y competitivo.
+                Nuestra misión es hacer de la odontología especializada una experiencia placentera y de primera calidad,
+                orientada a preservar y rehabilitar la salud oral.</p>
+              <a href="#" class="btn btn-custom btn-lg page-scroll">Agenda tu cita</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </header>
- 
+
   <!-- About Section -->
   <div id="about">
     <div class="container">
@@ -85,26 +114,32 @@
         <div class="col-xs-12 col-md-6"> <img src="img/doc.jpg" class="img-responsive" alt=""> </div>
         <div class="col-xs-12 col-md-6">
           <div class="about-text">
-            <h2>Quienes somos</h2>
-            <p>Dentalhealth Odontologos es una clínica odontológica especializada, ubicada en la ciudad de Medellín, Colombia. 
-              Contamos con profesionales expertos y calificados con amplia trayectoria en todas las áreas de la salud oral. 
-              Ofrecemos diversos servicios adaptados a sus necesidades con técnicas novedosas y equipos de última generación.</p>
+            <h2>Quiénes somos</h2>
+            <p>DentalHealth co. es una clínica odontológica especializada, ubicada en la ciudad de Medellín,
+              Colombia.
+              Contamos con profesionales expertos y calificados con amplia trayectoria en todas las áreas de la salud
+              oral.
+              Ofrecemos diversos servicios adaptados a sus necesidades con técnicas novedosas y equipos de última
+              generación.</p>
             <h3>¿Qué nos hace diferentes?</h3>
             <div class="list-style">
               <div class="col-lg-6 col-sm-6 col-xs-12">
                 <ul>
                   <li>Somos pioneros en Odontología integral y especializada en Colombia.</li>
-                  <li>En tu valoración todo nuestro equipo de especialistas, estará disponible para evaluar, analizar y diagnosticar, el camino hacia tu sonrisa soñada.</li>
+                  <li>En tu valoración todo nuestro equipo de especialistas, estará disponible para evaluar, analizar y
+                    diagnosticar, el camino hacia tu sonrisa soñada.</li>
                   <li>Contamos con el mejor equipo de especialistas liderados por el Dr. José David Uribe,</li>
                   <li>Estamos a la vanguardia con los últimos adelantos tecnológicos en materia odontológica.</li>
                 </ul>
               </div>
               <div class="col-lg-6 col-sm-6 col-xs-12">
                 <ul>
-                  <li>Tenemos los mejores estándares de calidad y bioseguridad para brindarte la mayor seguridad durante tu tratamiento.</li>
+                  <li>Tenemos los mejores estándares de calidad y bioseguridad para brindarte la mayor seguridad durante
+                    tu tratamiento.</li>
                   <li>Odontología orgullosamente colombiana con más de 30 años de experiencia.</li>
                   <li>Garantizamos la satisfacción completa a nuestros pacientes.</li>
-                  <li>Estamos al alcance de todos, con múltiples formas y planes de pago. Financiación hasta 60 meses.</li>
+                  <li>Estamos al alcance de todos, con múltiples formas y planes de pago. Financiación hasta 60 meses.
+                  </li>
                 </ul>
               </div>
             </div>
@@ -125,7 +160,8 @@
           <div class="service-media"> <img src="img/services/servicios_05.jpg" alt=" "> </div>
           <div class="service-desc">
             <h3>Diseño de Sonrisa</h3>
-            <p>El Diseño de Sonrisa cuenta con una suma de procedimientos y trabajo interdisciplinario que nos permitirán
+            <p>El Diseño de Sonrisa cuenta con una suma de procedimientos y trabajo interdisciplinario que nos
+              permitirán
               lograr una simetría de balance, funcionalidad y armonía para lograr la mejor estética ideal.</p>
           </div>
         </div>
@@ -133,7 +169,8 @@
           <div class="service-media"> <img src="img/services/servicios_02.jpg" alt=" "> </div>
           <div class="service-desc">
             <h3>Implantes</h3>
-            <p>El Diseño de Sonrisa cuenta con una suma de procedimientos y trabajo interdisciplinario que nos permitirán 
+            <p>El Diseño de Sonrisa cuenta con una suma de procedimientos y trabajo interdisciplinario que nos
+              permitirán
               lograr una simetría de balance, funcionalidad y armonía para lograr la mejor estética ideal.</p>
           </div>
         </div>
@@ -141,8 +178,9 @@
           <div class="service-media"> <img src="img/services/servicios_09.jpg" alt=" "> </div>
           <div class="service-desc">
             <h3>Periodoncia</h3>
-            <p>Nuestras fases higiénicas (Limpiezas) y tratamientos (modificación de encías) de esta especialidad son 
-              realizados por profesionales especialistas en periodoncia. Son el primer paso para cuidar tu salud oral..</p>
+            <p>Nuestras fases higiénicas (Limpiezas) y tratamientos (modificación de encías) de esta especialidad son
+              realizados por profesionales especialistas en periodoncia. Son el primer paso para cuidar tu salud oral..
+            </p>
           </div>
         </div>
       </div>
@@ -151,7 +189,7 @@
           <div class="service-media"> <img src="img/services/servicios_07.jpg" alt=" "> </div>
           <div class="service-desc">
             <h3>Ortodoncia</h3>
-            <p>Nada puede estar dado al azar en los movimientos de los dientes. Por eso contamos con un equipo de 
+            <p>Nada puede estar dado al azar en los movimientos de los dientes. Por eso contamos con un equipo de
               especialistas que te ayudarán a decidir el tipo de brackets o caso que más se ajuste a tu necesidad.</p>
           </div>
         </div>
@@ -168,7 +206,7 @@
           <div class="service-desc">
             <h3>Prótesis Dental</h3>
             <p>Hace parte de Rehabilitación Oral de tu sonrisa. Son tratamientos estéticos y funcionales que
-              te ayudarán a recuperar la forma, ángulos, colores y longitud de tus dientes, de acuerdo a tu 
+              te ayudarán a recuperar la forma, ángulos, colores y longitud de tus dientes, de acuerdo a tu
               rostro y labios. Prótesis y Coronas son los más comunes.</p>
           </div>
         </div>
@@ -195,8 +233,8 @@
           <div class="service-media"> <img src="img/services/servicios_04.jpg" alt=" "> </div>
           <div class="service-desc">
             <h3>Rehabilitación Oral</h3>
-            <p>Restauración de las piezas dentales, con la finalidad de restituir su función estética. 
-              Incluye todo lo relacionado con un tratamiento integral a partir de prótesis fijas, 
+            <p>Restauración de las piezas dentales, con la finalidad de restituir su función estética.
+              Incluye todo lo relacionado con un tratamiento integral a partir de prótesis fijas,
               prótesis removibles, oclusión e implantes dentales.</p>
           </div>
         </div>
@@ -215,7 +253,7 @@
           <div class="testimonial">
             <div class="testimonial-image"> <img src="img/testimonials/testimonios-01.jpg" alt=""> </div>
             <div class="testimonial-content">
-              <p>"Estoy muy contenta porque yo no veía solución. Hay gente que dice que DentalHealth es solo fama, 
+              <p>"Estoy muy contenta porque yo no veía solución. Hay gente que dice que DentalHealth es solo fama,
                 pero yo te puedo decir que no es fama es profesionalismo"</p>
               <div class="testimonial-meta"> - María Velásquez </div>
             </div>
@@ -225,8 +263,8 @@
           <div class="testimonial">
             <div class="testimonial-image"> <img src="img/testimonials/testimonios-02.jpg" alt=""> </div>
             <div class="testimonial-content">
-              <p>"...He mejorado muchísimo porque puedo sonreír con mayor tranquilidad, puedo hablar, 
-                cantar, todo lo que implica interactuar con otras personas. A mí siempre que me preguntan 
+              <p>"...He mejorado muchísimo porque puedo sonreír con mayor tranquilidad, puedo hablar,
+                cantar, todo lo que implica interactuar con otras personas. A mí siempre que me preguntan
                 por procedimientos odontológicos yo siempre hablo de DentalHealth"</p>
               <div class="testimonial-meta"> - Carolina Sanín </div>
             </div>
@@ -248,7 +286,7 @@
           <div class="testimonial">
             <div class="testimonial-image"> <img src="img/testimonials/testimonios-04.jpg" alt=""> </div>
             <div class="testimonial-content">
-              <p>"Me he sentido muy bien, el tratamiento ha sido efectivo. Estoy muy contenta con el trabajo. 
+              <p>"Me he sentido muy bien, el tratamiento ha sido efectivo. Estoy muy contenta con el trabajo.
                 Me siento realizada, me siento como una persona nueva, con una sonrisa bonita"</p>
               <div class="testimonial-meta"> - Sara Manchola </div>
             </div>
@@ -260,7 +298,7 @@
           <div class="testimonial">
             <div class="testimonial-image"> <img src="img/testimonials/testimonios-05.jpg" alt=""> </div>
             <div class="testimonial-content">
-              <p>"Hace un tiempo quería hacerme un procedimiento dental en un lugar donde me brindaran confianza, 
+              <p>"Hace un tiempo quería hacerme un procedimiento dental en un lugar donde me brindaran confianza,
                 donde no dañaran mi salud dental, y encontré a DentalHealth, de acá me voy súper satisfecho"</p>
               <div class="testimonial-meta"> - Santiago Montoya </div>
             </div>
@@ -270,7 +308,7 @@
           <div class="testimonial">
             <div class="testimonial-image"> <img src="img/testimonials/testimonios-06.jpg" alt=""> </div>
             <div class="testimonial-content">
-              <p>"Vengo desde Dallas - Texas y quiero recomendarles a DentalHealth y a todo su equipo, 
+              <p>"Vengo desde Dallas - Texas y quiero recomendarles a DentalHealth y a todo su equipo,
                 son excelentes en lo que hacen y el servicio es encantador"</p>
               <div class="testimonial-meta"> - Martina Urrutia </div>
             </div>
@@ -281,7 +319,7 @@
   </div>
 
   <!-- Gallery Section -->
-  <div id="portfolio">
+  <div id="gallery">
     <div class="container">
       <div class="section-title">
         <h2>Galería</h2>
@@ -293,7 +331,7 @@
               <div class="hover-bg"> <a href="img/portfolio/01-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                      <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/01-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -304,7 +342,7 @@
               <div class="hover-bg"> <a href="img/portfolio/02-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                    <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/02-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -315,7 +353,7 @@
               <div class="hover-bg"> <a href="img/portfolio/03-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                    <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/03-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -326,7 +364,7 @@
               <div class="hover-bg"> <a href="img/portfolio/04-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                    <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/04-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -337,7 +375,7 @@
               <div class="hover-bg"> <a href="img/portfolio/05-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                    <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/05-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -348,7 +386,7 @@
               <div class="hover-bg"> <a href="img/portfolio/06-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                    <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/06-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -359,7 +397,7 @@
               <div class="hover-bg"> <a href="img/portfolio/07-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                    <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/07-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -370,7 +408,7 @@
               <div class="hover-bg"> <a href="img/portfolio/08-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                    <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/08-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -381,7 +419,7 @@
               <div class="hover-bg"> <a href="img/portfolio/09-large.jpg" title="Project Title"
                   data-lightbox-gallery="gallery1">
                   <div class="hover-text">
-                    <img class="icon" src="img/logo_blanco_cuadrado.svg" ></i>
+                    <img class="icon" src="img/logo_blanco_cuadrado.svg"></i>
                   </div>
                   <img src="img/portfolio/09-small.jpg" class="img-responsive" alt="Project Title">
                 </a> </div>
@@ -391,21 +429,22 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Contact Section -->
   <div id="contact">
     <div class="container">
       <div class="col-md-8">
         <div class="row">
           <div class="section-title">
-            <h2>Get In Touch</h2>
-            <p>Please fill out the form below to send us an email and we will get back to you as soon as possible.</p>
+            <h2>Contáctenos</h2>
+            <p>Por favor complete este formulario si desea ser contactado por uno de nuestros
+              asesores, estamos para resolver todas sus inquietudes tan pronto como sea posible.</p>
           </div>
           <form name="sentMessage" id="contactForm" novalidate>
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input type="text" id="name" class="form-control" placeholder="Name" required="required">
+                  <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
@@ -417,38 +456,27 @@
               </div>
             </div>
             <div class="form-group">
-              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message"
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Mensaje"
                 required></textarea>
               <p class="help-block text-danger"></p>
             </div>
             <div id="success"></div>
-            <button type="submit" class="btn btn-custom btn-lg">Send Message</button>
+            <button type="submit" class="btn btn-custom btn-lg">Enviar mensaje</button>
           </form>
         </div>
       </div>
       <div class="col-md-3 col-md-offset-1 contact-info">
         <div class="contact-item">
-          <h4>Contact Info</h4>
-          <p><span>Address</span>4321 California St,<br>
-            San Francisco, CA 12345</p>
+          <h4>Información de Contacto</h4>
+          <p><span>Dirección</span>Carrera 46 # 70-48, Local 806<br>
+            Laureles, Medellín</p>
         </div>
         <div class="contact-item">
-          <p><span>Phone</span> +1 123 456 1234</p>
+          <p><span>Teléfono</span> (+57) 309 456 1478<br>
+            (+604) 449 4568</p>
         </div>
         <div class="contact-item">
-          <p><span>Email</span> info@company.com</p>
-        </div>
-      </div>
-      <div class="col-md-12">
-        <div class="row">
-          <div class="social">
-            <ul>
-              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-              <li><a href="#"><i class="fa fa-youtube"></i></a></li>
-            </ul>
-          </div>
+          <p><span>Email</span> contacto@dentalhealth.com.co</p>
         </div>
       </div>
     </div>
@@ -456,7 +484,7 @@
   <!-- Footer Section -->
   <div id="footer">
     <div class="container text-center">
-      <p>&copy; 2021</p>
+      <p>Desarrollado por: John Doe & Barbra Streisand. &copy; 2021</p>
     </div>
   </div>
   <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
