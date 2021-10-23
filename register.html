@@ -35,9 +35,8 @@
     <![endif]-->
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-  <!-- Navigation
-        ==========================================-->
+<body>
+  <!-- Navigation ==========================================-->
   <nav id="menu" class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -45,48 +44,62 @@
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
           data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span
             class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-        <a href="#page-top" class="page-scroll"> <img src="../dental_health/img/logo_dentalhealth.svg" height="50"
-            width="250"></a>
+        <a href="/dental_health/index.html" class="page-scroll"> <img src="../dental_health/img/logo_dentalhealth.svg"
+            height="50" width="250"></a>
       </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
-          <li><label for="show" class="btn btn-custom btn-lg">Cerrar Sesión</label></li>
+          <a href="/dental_health/index.html"><label for="show" class="btn btn-custom btn-lg">Volver al
+              inicio</label></a>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
     </div>
   </nav>
-  <div id="statusbar">
-    <div class="container">
-      <br><br>
-      <h3>Bienvenido, Farley Pelaez</h3>
-    </div>
-  </div>
-  <div id="dashboard">
-    <div class="container">
-      <div class="row">
-        <div class="dashboard-item">
-          <h3>Diseño de Sonrisa</h3>
-          <p>El Diseño de Sonrisa cuenta con una suma de procedimientos y trabajo interdisciplinario que nos
-            permitirán
-            lograr una simetría de balance, funcionalidad y armonía para lograr la mejor estética ideal.</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="dashboard-item">
-          <h3>Implantes</h3>
-          <p>El Diseño de Sonrisa cuenta con una suma de procedimientos y trabajo interdisciplinario que nos
-            permitirán
-            lograr una simetría de balance, funcionalidad y armonía para lograr la mejor estética ideal.</p>
+  <!--Header Background-->
+  <header id="header">
+    <div class="registerintro">
+      <div class="overlay">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2 intro-text">
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
+  </header>
+  <!--Register Form-->
+  <div id="register">
+    <div class="container" style="text-align:center; margin-top: 40px;">
+      <div class="col-md-4"></div>
+      <div class="col-md-4">
+        <div class="text">
+          <h3>Registro de Usuarios</h3>
+        </div>
+        <div class="row">
+          <form name="register" id="contactForm" novalidate>
+            <div class="form-group">
+              <input type="name" id="name" class="form-control" placeholder="Full Name" required="required">
+              <p class="help-block text-danger"></p>
+              <input type="tel" id="phone" class="form-control" placeholder="Phone" required="required">
+              <p class="help-block text-danger"></p>
+              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <p class="help-block text-danger"></p>
+              <input type="password" id="password" class="form-control" placeholder="Contraseña" required="required">
+              <p class="help-block text-danger"></p>
+            </div>
+            <div id="success">
+              <button type="register" class="btn btn-custom btn-lg">Registrarse</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4"></div>
+    </div>
   </div>
-  </div>
-
-
   <!-- Footer Section -->
   <div id="footer">
     <div class="container text-center">
