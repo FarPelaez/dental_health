@@ -129,7 +129,7 @@ hr {
   background-color: #1b6d3f;
 }
 .section-title {
-  margin-bottom: 70px;
+  margin-bottom: 30px;
 }
 .section-title h2 {
   position: relative;
@@ -248,7 +248,7 @@ header .intro-text {
 
 /* About Section */
 #about {
-  padding: 110px 0;
+  padding: 100px 0;
   background: #f6f6f6;
 }
 #login {
@@ -316,8 +316,7 @@ input[type="checkbox"] {
 }
 #about img {
   padding: 20px;
-  width: 500px;
-  margin-top: 10px;
+  width: 710px;
   background: #fff;
   border-right: 0;
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.06);
@@ -328,7 +327,7 @@ input[type="checkbox"] {
 }
 /* Services Section */
 #services {
-  padding: 100px 0;
+  padding: 80px 0;
   background: #1f386e;
 }
 #services .service-media {
@@ -415,7 +414,7 @@ input[type="checkbox"] {
 }
 /* Testimonials Section */
 #testimonials {
-  padding: 100px 0;
+  padding: 80px 0;
 }
 #testimonials i {
   color: #e6e6e6;
@@ -424,7 +423,7 @@ input[type="checkbox"] {
 }
 .testimonial {
   position: relative;
-  padding: 30px;
+  padding: 20px 0 20px 0;
 }
 .testimonial-image {
   float: left;
@@ -433,8 +432,8 @@ input[type="checkbox"] {
 .testimonial-image,
 .testimonial-image img {
   display: block;
-  width: 120px;
-  height: 120px;
+  width: 180px;
+  height: 180px;
 }
 .testimonial-content {
   position: relative;
@@ -580,4 +579,43 @@ label {
   #about img {
     margin: 50px 0;
   }
+}
+/*Dashboard Section */
+#dashboard {
+  padding: 150px 0;
+  background: #f6f6f6;
+}
+#services .service-media {
+  margin: 10px;
+}
+#services .service-media img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+#dashboard .dashboard-item {
+  margin: 10px 10px 20px;
+}
+#services h3 {
+  font-weight: 700;
+  padding: 5px 0;
+  color: #fff;
+}
+#services h2 {
+  font-weight: 700;
+  padding: 5px 0;
+  color: #fff;
+}
+#services p {
+  color: #bebebe;
+}
+#services .section-title h2 {
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #fff;
+}
+#services .service-desc hr {
+  margin-left: 0;
 }

@@ -12,8 +12,8 @@
     ================================================== -->
   <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="16x16" href="img/favicon-16x16.png">
 
   <!-- Bootstrap -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
@@ -73,13 +73,17 @@
         <div class="row">
           <form name="login" id="contactForm" novalidate>
             <div class="form-group">
-              <input type="text" id="name" class="form-control" placeholder="Nombre" required="required">
+              <input type="text" id="email" class="form-control" placeholder="Email" required="required">
               <p class="help-block text-danger"></p>
-              <input type="email" id="email" class="form-control" placeholder="Email" required="required">
+              <input type="email" id="password" class="form-control" placeholder="Contraseña" required="required">
               <p class="help-block text-danger"></p>
             </div>
-            <div id="success"></div>
-            <button type="login" class="btn btn-custom btn-lg">Iniciar sesión</button>
+            <div id="success">
+              <button type="login" class="btn btn-custom btn-lg">Iniciar sesión</button>
+            </div> <br>
+            <div class="form-group">
+              <p>¿No estás registrado? <a href="">¡Registrate aquí!</a></p>  
+            </div>  
           </form>
         </div>
       </div>
@@ -100,7 +104,7 @@
                 odontología, altamente calificado, idóneo y competitivo.
                 Nuestra misión es hacer de la odontología especializada una experiencia placentera y de primera calidad,
                 orientada a preservar y rehabilitar la salud oral.</p>
-              <a href="#" class="btn btn-custom btn-lg page-scroll">Agenda tu cita</a>
+              <a href="#contact" class="btn btn-custom btn-lg page-scroll">Contáctenos</a>
             </div>
           </div>
         </div>
